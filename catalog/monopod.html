@@ -55,8 +55,8 @@
                     <fieldset>
                         <legend>Стоимость</legend>
                         <ul>
-                            <li class="filter-option"> <!--Доработать бегунок; добавить границы от и до-->
-                                <input class="visually-hidden filter-input filter-input-range" type="range" name="product-cost" id="filter-product-cost">
+                            <li class="filter-option"> <!--Доработать бегунок; нужно два ползунка, пока только один-->
+                                <input class="visually-hidden filter-input filter-input-range" type="range" min="0" max="9000" step="1" value="5000" name="product-cost" id="filter-product-cost">
                                 <label for="filter-product-cost">Стоимость</label>
                             </li>
                         </ul>
@@ -103,11 +103,24 @@
                 </form>
             </section> 
             <section class="sorts">
-                <h2>Сортировка:</h2>
+                <h2 class="visually-hidden">Сортировка:</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
-                        <!--Доделать сортировку-->
+                        <legend>Сортировка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <button class="filter-button">По цене</button>
+                            </li>
+                            <li class="filter-option">
+                                <button class="filter-button">По типу</button>
+                            </li>
+                            <li class="filter-option">
+                                <button class="filter-button">По популярности</button>
+                            </li>
+                        </ul>
                     </fieldset>
+                    <button></button> <!--Сортировка по возрастанию-->
+                    <button></button> <!--Сортировка по убыванию-->
                 </form>
             </section>
 
@@ -159,13 +172,23 @@
                         <p class="catalog-item-price">4900 руб.</p>
                     </li>
                 </ul>
-            </section>
-            <section class="button">
-                    <button>Назад</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>Вперед</button>
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a href="#">Назад</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a>2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">Вперед</a>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer class="main-footer">
@@ -210,7 +233,7 @@
     </section>
     <section class="modal modal-product">
         <h2 class="visually-hidden">Выполните действие с продуктом</h2>
-        <button>В корзину</button>
-        <button>Добавить к сравнению</button>
+        <a class="button" href="#">В корзину</a>
+        <a class="button" href="#">Добавить к сравнению</a>
     </section>    
     </body>
