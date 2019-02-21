@@ -17,9 +17,10 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: #000000;
-    background-color: white;
     letter-spacing: 0.18px;
+    color: #000000;
+
+    background-color: white;
   }
  a {
      text-decoration: none;
@@ -69,19 +70,28 @@ body {
  .search-list,
  .slide-description,
  .name-specifications,
- .delivery-description,
+ .services-description,
  .about-us-description,
- .contacts-description {
+ .contacts-description,
+ .footer-contact,
+ .modal-category a {
     font-family: "Open Sans";
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.15px;
  }
+ .modal-category a {
+    line-height: 36px;
+ }
+ .search-icon-user,
+ .button.to-send,
+ .button.sing-in {
+     border: none;
+ }
  .search-icon-user {
     opacity: 0.3;
     background-color: rgb(240, 197, 46, 0);
-    border: none;
  }
 .catalog-navigation,
 .site-navigation,
@@ -90,11 +100,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 3.6px;
 }
-.services-item {
+.services-item,
+.button.to-send,
+.button.sing-in {
     letter-spacing: 2.15px;
 }
+.button.to-send,
+.button.sing-in {
+    background-color: rgba(0, 0, 0, 0);
+
+}
 .slide-title,
-.delivery-title,
+.services-title,
 .about-us-title,
 .contacts-title {
     font-size: 47px;
@@ -111,7 +128,7 @@ body {
     letter-spacing: 0.36px;
 }
 .name-specifications,
-.delivery-description,
+.services-description,
 .about-us-description,
 .contacts-description {
     color: #464646;
@@ -124,7 +141,7 @@ body {
 .services-container {
     background-color: #e5e5e5;
 }
-.delivery-title,
+.services-title,
 .about-us-title,
 .contacts-title {
     line-height: 48px;
@@ -133,9 +150,19 @@ body {
 .main-footer {
     background-color: #464646;
 }  
-.user-navigation.footer a,
-.site-navigation.footer a {
+.user-navigation.whight a,
+.site-navigation.whight a,
+.footer-contact {
     color: #ffffff;
+}
+.feedback-user-name,
+.feedback-user-e-mail,
+.feedback-user-letter-text {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(70, 70, 70, 0.4);
 }
 
   .visually-hidden {
