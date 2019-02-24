@@ -85,9 +85,84 @@ body {
     letter-spacing: 0.48px;
     color: #ffc600;
  }
- .main-navigation,
+ .main-navigation .container,
  .category-item {
     background-color: rgb(240, 197, 46, 0.5);
+ }
+ .main-navigation,
+ .main-footer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     /*временно для сетки*/
+     min-height: 299px;
+ }
+ .main-navigation-wrapper,
+ .main-footer-wrapper {
+     width: 100%;
+ }
+ .container {
+     width: 1160px;
+     margin: 0 auto;
+     padding: 0 10 px;
+ }
+ .main-navigation-wrapper .container,
+ .main-footer-wrapper .container,
+ .footer-conditions.container,
+ .footer-social.container {
+     display: flex;
+     justify-content: space-between;
+ }
+ .category {
+     margin-bottom: 84px;
+ }
+ .category-list,
+ .brands-list {
+     display: flex;
+     justify-content: space-between;
+     margin: 0;
+     padding: 0;
+ }
+ .category-item {
+     width: 160px;
+
+     /*временно для сетки*/
+     min-height: 240px;
+ }
+ .index-columns {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 20px;
+ }
+ .img-product {
+     width: 440px;
+ }
+ .description-product {
+    width: 500px;
+ }
+ .about-us {
+     width: 485px;
+ }
+ .contacts {
+    width: 560px;
+ }
+ .services-container {
+     display: flex;
+
+     margin-bottom: 94px;
+ }
+ .brands {
+     margin-bottom: 93px;
+ }
+ .main-footer {
+     margin-top: 96px;
+ }
+ .footer-conditions {
+     margin: 0;
+ }
+ .footer-copyright {
+    margin: 0;
  }
  .search-icon-user,
  .user-navigation,
