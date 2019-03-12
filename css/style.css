@@ -157,7 +157,7 @@ body {
      justify-content: space-between;
  }
  .category {
-     margin-bottom: 84px;
+     margin-bottom: 164px;
  }
  .category-list,
  .brands-list {
@@ -172,7 +172,55 @@ body {
  .index-columns {
      display: flex;
      justify-content: space-between;
-     padding: 0 20px;
+     position: absolute;
+     left: 5%;
+     right: 5%;
+ }
+ .information-columns {
+    display: flex;
+    justify-content: space-between;
+ }
+ .description-services {
+    position: relative;
+
+    width: 426px;
+    padding-left: 110px;
+    padding-top: 15px;
+ }
+ .logo-services {
+    position: relative;
+    min-width: 136px;
+    padding-left: 130px;
+    padding-top: 65px;
+ }
+ .delivery,
+ .warranty,
+ .credit {
+     position: absolute;
+ }
+ .delivery-img {
+     width: 136px;
+     height: 164px;
+ }
+ .warranty-img {
+    width: 171px;
+    height: 194px;
+ }
+ .credit-img {
+    width: 156px;
+    height: 186px;
+ }
+ .slider-container {
+    position: relative;
+    margin-top: -111px;
+    min-height: 486px;
+    margin-bottom: 105px;
+ }
+ .index-columns.slide-1 {
+     z-index: 3;
+ }
+ .index-columns.slide-2 {
+     z-index: 2;
  }
  .img-product {
      width: 440px;
@@ -187,9 +235,15 @@ body {
     width: 560px;
  }
  .services-container {
+     position: absolute;
+     left: 50%;
+     margin-left: -580px;
+
      display: flex;
 
+     min-height: 288px;
      margin-bottom: 94px;
+     margin-top: -80px;
  }
  .brands {
      margin-bottom: 93px;
@@ -259,6 +313,26 @@ body {
 }
 .services-item {
     letter-spacing: 2.15px;
+    padding: 7px 0px;
+    padding-left: 20px;
+    margin: 10px 0px; 
+}
+.services-item:hover a,
+.services-item:hover {
+    color: #f7e184;
+    background-color: #000000;
+}
+.services-list {
+    min-height: 288px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0px;
+    min-width: 278px;
+    border-right: solid black 7px;
 }
 .button.to-send,
 .button.sing-in,
@@ -306,8 +380,10 @@ body {
     line-height: 20px;
     letter-spacing: 0.13px;
 }
-.services-container {
+.container-wrapper {
     background-color: #e5e5e5;
+    min-height: 288px;
+    margin-bottom: 95px;
 }
 .main-footer {
     background-color: #464646;

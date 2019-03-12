@@ -9,14 +9,17 @@
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
         </head>
         <body>
-            <header class="main-header">
-                <h1 class="visually-hidden">Интернет-магазин Device</h1>
-                <nav class="main-navigation">    
-                    <a class="main-header-logo">
+
+          <header class="main-header">
+            <h1 class="visually-hidden">Интернет-магазин Device</h1>
+              <nav class="main-navigation"> 
+
+                <a class="main-header-logo">
                       Device
-                    </a>
-                    <div class="main-navigation-wrapper">
-                    <div class="container">  
+                </a>
+
+                <div class="main-navigation-wrapper">
+                  <div class="container">  
                       <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
                           <ul class="search-list">
                               <li class="search-item-user">
@@ -35,10 +38,11 @@
                           <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
                           </div>      
                     </ul>
-                    </div>
-                    </div>
-                    <div class="main-navigation-wrapper">
-                    <div class="container"> 
+                  </div>
+                </div>
+
+                <div class="main-navigation-wrapper">
+                  <div class="container"> 
                       <ul class="catalog-navigation">
                           <li><a href="catalog.html">Каталог товаров</a></li>
                       </ul>
@@ -49,13 +53,15 @@
                           </div>
                           <li class="contact"><a href="contact.html">Контакты</a></li>
                       </ul>
-                    </div> 
-                    </div>
-                </nav>
-            </header>
-             <main class="container">
-                 <!--Переключатель слайдов-->
-                 <ul class="slides-switches visually-hidden">
+                  </div> 
+                </div>
+
+              </nav>
+          </header>
+
+          <main class="">
+            <!--Переключатель слайдов-->
+            <ul class="slides-switches visually-hidden">
                      <li class="slide-radio">
                          <button class="slide-btn">1</button>
                      </li>
@@ -65,8 +71,10 @@
                      <li class="slide-radio">
                         <button class="slide-btn">3</button>
                      </li>
-                 </ul>
-                 <div class="index-columns">
+            </ul>
+
+            <div class="slider-container container">
+                 <div class="index-columns slide-1">
                      <section class="img-product">
                        <h2 class="visually-hidden">Слайд</h2>
                        <img src="img/slider-1.png" aria-label="Изображение продукта">
@@ -91,7 +99,7 @@
                        </table>
                     </section>
                  </div>
-                 <div class="index-columns">
+                 <div class="index-columns slide-2">
                     <section class="img-product">
                       <h2 class="visually-hidden">Слайд</h2>
                       <img src="img/slider-2.png" aria-label="Изображение продукта">
@@ -112,7 +120,7 @@
                       </table>
                     </section>
                  </div>
-                <div class="index-columns"> 
+                <div class="index-columns slide-3"> 
                     <section class="img-product">
                       <h2 class="visually-hidden">Слайд</h2>
                       <img src="img/slider-3.png" aria-label="Изображение продукта">
@@ -135,7 +143,9 @@
                       </table>
                     </section>
                 </div>
-                <div class="container">
+            </div>
+
+            <div class="container">
                  <section class="category">
                      <h2 class="visually-hidden">Категории товаров</h2>
                      <ul class="category-list">
@@ -164,9 +174,11 @@
                              <a>Квадрокоптеры</a>
                         </li>
                      </ul>
-                </div>
-                 </section>
-                 <div class="services-container">
+                </section> 
+            </div>
+                 
+            <div class="container-wrapper">
+                 <div class="services-container container">
                    <section class="services">
                       <h2 class="visually-hidden">Услуги</h2>
                        <ul class="services-list">
@@ -174,23 +186,38 @@
                            <li class="services-item"><a href="">Гарантия</a></li>
                            <li class="services-item"><a href="">Кредит</a></li>
                        </ul>
-                   </section> 
-                   <section class="delivery">   
-                       <h3 class="services-title">Доставка</h3>
-                       <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                    </section>
-                   <section class="warranty">
-                        <h3 class="services-title">Гарантия</h3>
-                        <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                   <div class="description-services"> 
+                   <section class="delivery">  
+                         <h3 class="services-title">Доставка</h3>
+                         <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p> 
+                    </section>
+                   <section class="warranty visually-hidden"> <!--убрать скрывающий класс-->
+                          <h3 class="services-title">Гарантия</h3>
+                          <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                             Товар, не дом, конечно же.</p>
-                   </section>
-                   <section class="credit">
-                        <h3 class="services-title">Кредит</h3>
-                        <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+                        </section>
+                   <section class="credit visually-hidden"> <!--убрать скрывающий класс-->
+                          <h3 class="services-title">Кредит</h3>
+                          <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
                             условия кредита. Выгодные для нашего банка, разумеется.</p>
-                   </section>
+                        </section>
+                   </div>
+                   <div class="logo-services">
+                        <section class="delivery">  
+                          <img class="delivery-img" src="img/services/delivery.png"> 
+                        </section>
+                        <section class="warranty visually-hidden"> <!--убрать скрывающий класс-->
+                          <img class="warranty-img" src="img/services/warranty.png">
+                        </section>
+                        <section class="credit visually-hidden"> <!--убрать скрывающий класс-->
+                          <img class="credit-img" src="img/services/credit.png">
+                        </section>
+                   </div>
                 </div>
-                <div class="container">
+            </div>
+
+            <div class="container">
                  <section class="brands"><!--Изменить альты изображений-->
                     <h2 class="visually-hidden">Популярные бренды</h2>
                     <ul class="brands-list">
@@ -200,8 +227,9 @@
                         <li class="brands-item"><img src="img/brands/brand-4.png" aria-label="Популярные бренды"></li>
                     </ul>
                  </section>
-                </div>
-                <div class="index-columns">
+            </div>
+
+            <div class="information-columns container">
                  <section class="about-us">
                     <img src="img/line_black.png">
                     <h2 class="about-us-title">О нас</h2>
@@ -227,9 +255,11 @@
                     <img class="contacts-map" src="img/map.jpg">
                     <a class="button" href="">Напишите нам</a>
                  </section>
-                </div>
-             </main>
-             <footer class="main-footer">
+            </div>
+
+            </main>
+
+            <footer class="main-footer">
                 <div class="main-footer-wrapper">
                 <div class="container">   
                 <section class="main-footer-logo">
@@ -271,8 +301,8 @@
                         <span class="logo-html"><img src="img/logo-html.png"></span>
                     </p>
                 </section>
-             </footer>
-             <section class="modal modal-login">
+            </footer>
+            <section class="modal modal-login">
                  <h2>Личный кабинет</h2>
                  <p>Введите свой логин и пароль</p>
                  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -295,8 +325,8 @@
                     <button class="button sing-in" type="submit">Войти</button>
                 </form>
                 <button class="modal-close" type="button">Закрыть</button>
-             </section>
-             <section class="modal modal-category">
+            </section>
+            <section class="modal modal-category">
                  <h2 class="visually-hidden">Категории товаров</h2>
                  <ul class="category-list">
                     <li class="category-item"><a href="">Виртуальная реальность</a></li>
@@ -306,15 +336,15 @@
                     <li class="category-item"><a href="">Умные часы</a></li>
                     <li class="category-item"><a href="">Квадрокоптеры</a></li>
                 </ul>
-             </section>
-             <section class="modal modal-map">
+            </section>
+            <section class="modal modal-map">
                  <h2 class="visually-hidden">Как до нас добраться</h2>
                  <p>
                      <img src="img/map-big.jpg" width="960px" height="559px" alt=""> <!--Дописать адрес офиса-->
                  </p>
                  <button class="modal-close" type="button">Закрыть</button>
-             </section>
-             <section class="modal modal-feedback">
+            </section>
+            <section class="modal modal-feedback">
                  <h2 class="visually-hidden">Форма обратной связи</h2>
                  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
                    <p>
@@ -332,6 +362,6 @@
                     <button class="button to-send" type="submit">Отправить</button>
                  </form>
                  <button class="modal-close" type="button">Закрыть</button>
-             </section>
+            </section>
         </body>
     </html>
