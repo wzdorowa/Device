@@ -246,15 +246,15 @@
                             <p>ЖелДорЭкспедиция</p>
                         </li>
                      </ul>
-                     <a class="button" href="">Подробнее о нас</a>
-                 </section>
+                     <a class="button line" href="">Подробнее о нас</a>
+                    </section>
                  <section class="contacts">
                     <img src="img/line_black.png">
                     <h2 class="contacts-title">Контакты</h2>
                     <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img class="contacts-map" src="img/map.jpg">
-                    <a class="button" href="">Напишите нам</a>
-                 </section>
+                     <a class="button line" href="">Напишите нам</a>
+                </section>
             </div>
 
             </main>
@@ -302,30 +302,6 @@
                     </p>
                 </section>
             </footer>
-            <section class="modal modal-login">
-                 <h2>Личный кабинет</h2>
-                 <p>Введите свой логин и пароль</p>
-                 <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                    <p>
-                        <label class="visually-hidden" for="user-login">Логин</label>
-                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-                    </p>
-                    <p>
-                        <label class="visually-hidden" for="user-password">Пароль</label>
-                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                    </p>
-                    <p class="login-password-info">
-                        <label for="login-password-info">
-                        <input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
-                        <span class="checkbox-indicator"></span>
-                        Запомните меня
-                        </label>
-                        <a class="restore" href="#">Я забыл пароль!</a>
-                    </p>
-                    <button class="button sing-in" type="submit">Войти</button>
-                </form>
-                <button class="modal-close" type="button">Закрыть</button>
-            </section>
             <section class="modal modal-category">
                  <h2 class="visually-hidden">Категории товаров</h2>
                  <ul class="category-list">
@@ -339,27 +315,27 @@
             </section>
             <section class="modal modal-map">
                  <h2 class="visually-hidden">Как до нас добраться</h2>
-                 <p>
-                     <img src="img/map-big.jpg" width="960px" height="559px" alt=""> <!--Дописать адрес офиса-->
+                 <p class="map-paragraph">
+                     <img src="img/map-big.png" width="960px" height="559px" alt=""> <!--Дописать адрес офиса-->
                  </p>
                  <button class="modal-close" type="button">Закрыть</button>
             </section>
-            <section class="modal modal-feedback">
+            <section class="modal modal-feedback ">
                  <h2 class="visually-hidden">Форма обратной связи</h2>
                  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-                   <p>
+                   <p class="feedback-paragraph">
                      <label for="user-name">Ваше имя:</label>
                      <input class="feedback-user-name" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
                    </p>
-                   <p>
+                   <p class="feedback-paragraph">
                       <label for="user-e-mail">Ваш e-mail:</label>
                       <input class="feedback-user-e-mail" type="text" id="user-e-mail" name="e-mail" placeholder="email@example.com">
                     </p>
-                    <p>
+                    <p class="feedback-paragraph">
                       <label for="user-letter-text">Текст письма:</label>
-                      <input class="feedback-user-letter-text" type="text" id="user-letter-text" name="text" placeholder="В свободной форме">
+                      <textarea class="feedback-user-letter-text" type="text" id="user-letter-text" name="text" placeholder="В свободной форме"></textarea>
                     </p>
-                    <button class="button to-send" type="submit">Отправить</button>
+                    <button class="button to-send" type="submit"><hr class="line">Отправить</button>
                  </form>
                  <button class="modal-close" type="button">Закрыть</button>
             </section>
