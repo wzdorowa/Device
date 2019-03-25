@@ -258,7 +258,7 @@
                     <h2 class="contacts-title">Контакты</h2>
                     <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img class="contacts-map" src="img/map.jpg">
-                     <a class="button line" href="">Напишите нам</a>
+                     <a class="button line button-feedback" href="">Напишите нам</a>
                 </section>
             </div>
 
@@ -320,10 +320,11 @@
             </section>
             <section class="modal modal-map">
                  <h2 class="visually-hidden">Как до нас добраться</h2>
-                 <p class="map-paragraph">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316086874!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1553522904117" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 <p class="map-paragraph visually-hidden">
                      <img src="img/map-big.png" width="960px" height="559px" alt=""> <!--Дописать адрес офиса-->
                  </p>
-                 <button class="modal-close" type="button">Закрыть</button>
+                 <button class="modal-close close-map" type="button">Закрыть</button>
             </section>
             <section class="modal modal-feedback ">
                  <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -342,7 +343,52 @@
                     </p>
                     <button class="button to-send" type="submit"><hr class="line">Отправить</button>
                  </form>
-                 <button class="modal-close" type="button">Закрыть</button>
+                 <button class="modal-close close-feedback" type="button">Закрыть</button>
             </section>
+            <div class="modal-overlay"></div>
+        <script>
+            var map = document.querySelector(".contacts-map");
+            var map_popup = document.querySelector(".modal-map");
+            var close_map = document.querySelector(".close-map");
+            
+            var feedback = document.querySelector(".button-feedback");
+            var feedback_popup = document.querySelector(".modal-feedback");
+            var close_feedback = document.querySelector(".close-feedback");
+
+            var overlay = document.querySelector(".modal-overlay");
+            var close_click_overlay = document.querySelector(".modal-overlay");
+
+            map.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                map_popup.classList.add("modal-show");
+                overlay.classList.add("modal-show");
+            });
+
+            close_map.addEventListener("click", function(evt) {
+                evt.preventDefault;
+                map_popup.classList.remove("modal-show");
+                overlay.classList.remove("modal-show");
+            });
+
+            feedback.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                feedback_popup.classList.add("modal-show");
+                overlay.classList.add("modal-show");
+            });
+
+            close_feedback.addEventListener("click", function(evt) {
+                evt.preventDefault;
+                feedback_popup.classList.remove("modal-show");
+                overlay.classList.remove("modal-show");
+            });
+
+            close_click_overlay.addEventListener("click", function(evt) {
+                evt.preventDefault;
+                map_popup.classList.remove("modal-show");
+                feedback_popup.classList.remove("modal-show");
+                overlay.classList.remove("modal-show");
+            })
+
+        </script>    
         </body>
     </html>
