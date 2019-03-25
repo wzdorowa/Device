@@ -60,19 +60,6 @@
           </header>
 
           <main class="">
-            <!--Переключатель слайдов-->
-            <ul class="slides-switches visually-hidden">
-                     <li class="slide-radio">
-                         <button class="slide-btn">1</button>
-                     </li>
-                     <li class="slide-radio">
-                        <button class="slide-btn">2</button>
-                     </li>
-                     <li class="slide-radio">
-                        <button class="slide-btn">3</button>
-                     </li>
-            </ul>
-
             <div class="slider-container container">
                  <div class="index-columns slide-1">
                      <section class="img-product">
@@ -80,35 +67,51 @@
                        <img src="img/slider-1.png" aria-label="Изображение продукта">
                      </section>
                      <section class="description-product">
+                       <p class="whight-hyphen"></p> 
+                       <p class="number-slide">01</p> 
                        <h3 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h3>
                        <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                       <a class="button" href="#">Подробнее</a> 
-                       <!--Добавить кнопки переключения сайд бара-->
+                       <div class="string-buttons"> 
+                         <a class="button line" href="#">Подробнее</a> 
+                         <ul class="slides-switches">
+                            <li class="slide-radio">
+                                <button class="slide-btn-1"></button>
+                            </li>
+                            <li class="slide-radio">
+                                <button class="slide-btn-2"></button>
+                            </li>
+                            <li class="slide-radio">
+                                <button class="slide-btn-3"></button>
+                            </li>
+                         </ul>
+                        </div>  
                        <table class="specifications">
-                           <tr class="description-specifications">
-                               <td>8,5</td>
-                               <td>5 кг</td>
-                               <td>Карбон</td>
-                           </tr>
-                           <tr class="name-specifications">
-                              <td>Длина палки</td>
-                              <td>Вес палки</td>
-                              <td>Материал</td>
-                           </tr>
+                             <tr class="description-specifications">
+                                  <td class="cell">8,5 м</td>
+                                  <td class="cell">5 кг</td>
+                                  <td class="cell">Карбон</td>
+                             </tr>
+                             <tr class="name-specifications">
+                                <td class="cell">Длина палки</td>
+                                <td class="cell">Вес палки</td>
+                                <td class="cell">Материал</td>
+                             </tr>
                        </table>
                     </section>
                  </div>
-                 <div class="index-columns slide-2">
+                 <div class="index-columns slide-2 visually-hidden">
                     <section class="img-product">
                       <h2 class="visually-hidden">Слайд</h2>
                       <img src="img/slider-2.png" aria-label="Изображение продукта">
                     </section>
                     <section class="description-product">
+                      <p class="whight-hyphen"></p>
+                      <p class="number-slide">02</p>
                       <h3 class="slide-title">Худеем <br> правильно!</h3>
                       <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе 
                         силы не пропускать занятия и соблюдать диету</p>
-                      <a class="button" href="#">Подробнее</a>
+                      <a class="button line" href="#">Подробнее</a>
                       <!--Добавить кнопки переключения сайд бара-->
                       <table class="specifications">
                           <tr class="description-specifications">
@@ -120,16 +123,18 @@
                       </table>
                     </section>
                  </div>
-                <div class="index-columns slide-3"> 
+                <div class="index-columns slide-3 visually-hidden"> 
                     <section class="img-product">
                       <h2 class="visually-hidden">Слайд</h2>
                       <img src="img/slider-3.png" aria-label="Изображение продукта">
                     </section>
                     <section class="description-product">
+                      <p class="whight-hyphen"></p>
+                      <p class="number-slide">03</p>
                       <h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
                       <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
                         мощным лазером, замаскированным под стандартную камеру.</p>
-                      <a class="button" href="#">Подробнее</a> 
+                      <a class="button line" href="#">Подробнее</a> 
                       <!--Добавить кнопки переключения сайд бара-->
                       <table class="specifications">
                           <tr class="description-specifications">
@@ -182,9 +187,9 @@
                    <section class="services">
                       <h2 class="visually-hidden">Услуги</h2>
                        <ul class="services-list">
-                           <li class="services-item"><a href="">Доставка</a></li>
-                           <li class="services-item"><a href="">Гарантия</a></li>
-                           <li class="services-item"><a href="">Кредит</a></li>
+                           <li class="services-item"><a class="button line" href="">Доставка</a></li>
+                           <li class="services-item"><a class="button line" href="">Гарантия</a></li>
+                           <li class="services-item"><a class="button line" href="">Кредит</a></li>
                        </ul>
                    </section>
                    <div class="description-services"> 
