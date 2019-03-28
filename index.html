@@ -7,6 +7,7 @@
             <link href="css/normalize.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+             
         </head>
         <body>
 
@@ -61,11 +62,9 @@
 
           <main class="">
             <div class="slider-container container">
-                <div class="switch-slider">
-                    <input type="radio" name="point" id="slide1" checked>
-                    <input type="radio" name="point" id="slide2">
-                    <input type="radio" name="point" id="slide3">
-                </div>
+                    <input class="switch-slider" type="radio" name="point" id="slide1" checked>
+                    <input class="switch-slider" type="radio" name="point" id="slide2">
+                    <input class="switch-slider" type="radio" name="point" id="slide3">
                 <div class="slider">
                    <div class="slides slide1">
                      <section class="img-product">
@@ -73,13 +72,13 @@
                        <img src="img/slider-1.png" aria-label="Изображение продукта">
                      </section>
                      <section class="description-product">
-                       <p class="whight-hyphen"></p> 
-                       <p class="number-slide">01</p> 
+                        <p class="whight-hyphen"></p> 
+                        <p class="number-slide">01</p>
                        <h3 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h3>
                        <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                        <a class="button line" href="#">Подробнее</a>
-
+                       
                        <table class="specifications">
                              <tr class="description-specifications">
                                   <td class="cell">8,5 м</td>
@@ -186,12 +185,15 @@
                  <div class="services-container container">
                    <section class="services">
                       <h2 class="visually-hidden">Услуги</h2>
-                       <ul class="services-list">
-                           <li class="services-item"><a class="button line" href="">Доставка</a></li>
-                           <li class="services-item"><a class="button line" href="">Гарантия</a></li>
-                           <li class="services-item"><a class="button line" href="">Кредит</a></li>
-                       </ul>
-                   </section>
+
+                       <input class="switch-path" type="button" name="point" id="part1" value="Доставка" checked>
+                       <input class="switch-path" type="button" name="point" id="part2" value="Гарантия">
+                       <input class="switch-path" type="button" name="point" id="part3" value="Кредит">
+                   
+                       <label for="part1"></label>
+                       <label for="part2"></label>
+                       <label for="part3"></label>
+                    </section>
                    <div class="description-services"> 
                    <section class="delivery">  
                          <h3 class="services-title">Доставка</h3>

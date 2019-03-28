@@ -95,6 +95,7 @@ body {
     padding-left: auto;
     padding-right: auto;
  }
+ 
  .whight-hyphen {
     width: 100px;
     height: 7px;
@@ -221,7 +222,7 @@ body {
      opacity: 0;
      z-index: 0;
      transform: scale(1.5);
-     transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+     transition: transform ease-in-out 0.3s, opacity ease-in-out .5s;
 
  }
  #slide1:checked ~ .slider > .slide1,
@@ -244,8 +245,8 @@ body {
      width: 8px;
      border-radius: 50%;
      margin: 25px 12px 0 16px;
-
      transition: background ease-in-out .5s;
+     z-index: 2;
  }
  .slider-container .switch-btn::after {
      display: block;
@@ -259,6 +260,7 @@ body {
      top: -3px;
      position: absolute;
      border-radius: 50%;
+     z-index: 2;
  }
  .slider-container .switch-btn:hover,
  #slide1:checked ~ .controls .switch-btn:nth-of-type(1),
@@ -398,36 +400,43 @@ body {
     opacity: 0.3;
     background-color: rgb(240, 197, 46, 0);
  }
+ .services {
+    min-height: 288px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0px;
+    min-width: 278px;
+    border-right: solid black 7px;
+ }
+ .services .switch-path:nth-of-type(1) {
+     margin-top: 70px;
+ }
+ .switch-path {
+     border: none;
+     background-color: rgba(0, 0, 0, 0);
+     text-align: left;
+     padding-left: 20px;
+ }
 .catalog-navigation,
 .site-navigation,
 .button,
-.services-item {
+.switch-path {
     text-transform: uppercase;
     letter-spacing: 3.6px;
 }
-.services-item {
+.switch-path {
     letter-spacing: 2.15px;
-    padding: 7px 0px;
-    padding-left: 20px;
-    margin: 10px 0px; 
 }
 .services-item:hover a,
 .services-item:hover {
     color: #f7e184;
     background-color: #000000;
 }
-.services-list {
-    min-height: 288px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0px;
-    min-width: 278px;
-    border-right: solid black 7px;
-}
 .button.to-send,
 .button.sing-in,
 .button.to-show {
@@ -452,6 +461,7 @@ body {
     right: 0;
     top: 0;
     margin: 0;
+    z-index: -1;
 
     font-family: "gilroyextrabold";
     font-size: 179px;
@@ -828,6 +838,7 @@ body {
 }
 .contacts-map {
     margin-bottom: 83px;
+    cursor: pointer;
 }
 .footer-social {
     margin-top: 50px;
