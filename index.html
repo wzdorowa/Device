@@ -62,9 +62,9 @@
 
           <main class="">
             <div class="slider-container container">
-                    <input class="switch-slider" type="radio" name="point" id="slide1" checked>
-                    <input class="switch-slider" type="radio" name="point" id="slide2">
-                    <input class="switch-slider" type="radio" name="point" id="slide3">
+                    <input class="switch-slider" type="radio" name="point-slider" id="slide1" checked>
+                    <input class="switch-slider" type="radio" name="point-slider" id="slide2">
+                    <input class="switch-slider" type="radio" name="point-slider" id="slide3">
                 <div class="slider">
                    <div class="slides slide1">
                      <section class="img-product">
@@ -180,52 +180,55 @@
                      </ul>
                 </section> 
             </div>
-                 
-            <div class="container-wrapper">
-                 <div class="services-container container">
-                    <section class="services">
-                      <h2 class="visually-hidden">Услуги</h2>
 
-                       <button class="switch-path" type="button" name="point" id="part1">Доставка</button>
-                       <button class="switch-path" type="button" name="point" id="part2">Гарантия</button>
-                       <button class="switch-path" type="button" name="point" id="part3">Кредит</button>
-                   
-                    </section>
-                   <div class="descriptions-services"> 
-                      <div class="description-services path1">
-                        <section class="delivery">  
-                           <h3 class="services-title">Доставка</h3>
-                           <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p> 
-                        </section>
-                      </div>
-                      <div class="description-services path2">
-                        <section class="warranty"> <!--убрать скрывающий класс-->
-                            <h3 class="services-title">Гарантия</h3>
-                            <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                            Товар, не дом, конечно же.</p>
-                        </section>
-                      </div>
-                      <div class="description-services path3">
-                        <section class="credit"> <!--убрать скрывающий класс-->
-                            <h3 class="services-title">Кредит</h3>
-                            <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-                            условия кредита. Выгодные для нашего банка, разумеется.</p>
-                        </section>
+            <div class="container-wrapper">
+                    <div class="services-container container">
+                           <input class="switch-path" type="radio" name="point-path" id="path1" checked>
+                           <input class="switch-path" type="radio" name="point-path" id="path2">
+                           <input class="switch-path" type="radio" name="point-path" id="path3">
+                       
+                       <section class="services">
+                         <h2 class="visually-hidden">Услуги</h2>
+   
+                         <label class="switch-btn-path" for="path1"><p class="text-switch">Доставка</p></label>
+                         <label class="switch-btn-path" for="path2"><p class="text-switch">Гарантия</p></label>
+                         <label class="switch-btn-path" for="path3"><p class="text-switch">Кредит</p></label>
+                      
+                       </section>
+
+                      <div class="descriptions-services"> 
+                         <div class="description-services path1">
+                           <section class="delivery">  
+                              <h3 class="services-title">Доставка</h3>
+                              <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p> 
+                           </section>
+                           <section class="logo-delivery">  
+                                   <img class="delivery-img" src="img/services/delivery.png"> 
+                           </section>
+                         </div>
+                         <div class="description-services path2">
+                           <section class="warranty"> 
+                               <h3 class="services-title">Гарантия</h3>
+                               <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                               Товар, не дом, конечно же.</p>
+                           </section>
+                           <section class="logo-warranty">
+                               <img class="warranty-img" src="img/services/warranty.png">
+                           </section>
+                         </div>
+                         <div class="description-services path3">
+                           <section class="credit">
+                               <h3 class="services-title">Кредит</h3>
+                               <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+                               условия кредита. Выгодные для нашего банка, разумеется.</p>
+                           </section>
+                           <section class="logo-credit"> 
+                               <img class="credit-img" src="img/services/credit.png">
+                           </section>
+                         </div>
                       </div>
                    </div>
-                   <div class="logo-services">
-                        <section class="delivery">  
-                          <img class="delivery-img" src="img/services/delivery.png"> 
-                        </section>
-                        <section class="warranty">
-                          <img class="warranty-img" src="img/services/warranty.png">
-                        </section>
-                        <section class="credit"> 
-                          <img class="credit-img" src="img/services/credit.png">
-                        </section>
-                   </div>
-                </div>
-            </div>
+               </div>
 
             <div class="container">
                  <section class="brands"><!--Изменить альты изображений-->
@@ -301,7 +304,7 @@
                 </section> 
                 <section class="footer-social container">
                     <h2 class="visually-hidden">Мы в соцсетях</h2>
-                    <img class="footer-line" src="img/line_yellow.png">
+                    <p class="yellow-hyphen"></p>
                     <ul class="social-buttons">
                         <li><a class="social-btn-fb" href=""><img src="img/icon/Fb.png"></a></li>
                         <li><a class="social-btn-insta" href=""><img src="img/icon/Insta.png"></a></li>

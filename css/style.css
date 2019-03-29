@@ -72,7 +72,6 @@ body {
     width: 220px; 
     height: 24px;
     text-align: center;
-    vertical-align: middle;
     padding-left: auto;
     padding-right: auto;
  }
@@ -81,7 +80,6 @@ body {
     width: 160px; 
     height: 24px;
     text-align: center;
-    vertical-align: middle;
     padding-left: auto;
     padding-right: auto;
  }
@@ -91,7 +89,6 @@ body {
     width: 260px; 
     height: 24px;
     text-align: center;
-    vertical-align: middle;
     padding-left: auto;
     padding-right: auto;
  }
@@ -103,6 +100,14 @@ body {
 
     margin: 0;
     margin-top: 35px;
+}
+.yellow-hyphen {
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
+
+    margin: 0;
+    margin-top: 15px;
 }
  .main-header-logo,
  .main-footer-logo {
@@ -208,6 +213,8 @@ body {
  .category-item {
      width: 160px;
  }
+
+ /* Стилизация слайдера*/
  .slider {
     position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
@@ -231,6 +238,12 @@ body {
     opacity: 1;
     z-index: 1;
     transform: scale(1);
+}
+.slider-container .switch-btn:hover,
+#slide1:checked ~ .controls .switch-btn:nth-of-type(1),
+#slide2:checked ~ .controls .switch-btn:nth-of-type(2),
+#slide3:checked ~ .controls .switch-btn:nth-of-type(3) {
+   background: black;
 }
  .slider-container .controls {
      position: absolute;
@@ -262,68 +275,103 @@ body {
      border-radius: 50%;
      z-index: 2;
  }
- .slider-container .switch-btn:hover,
- #slide1:checked ~ .controls .switch-btn:nth-of-type(1),
- #slide2:checked ~ .controls .switch-btn:nth-of-type(2),
- #slide3:checked ~ .controls .switch-btn:nth-of-type(3) {
-    background: black;
+/* Конец стилизации слайдера*/
+
+
+/* Стилизация сервисов*/
+.services {
+    min-height: 288px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0px;
+    min-width: 278px;
+    border-right: solid black 7px;
+ }
+ .descriptions-services {
+     max-height: 320px;
+ }
+ .description-services {
+     position: absolute;
+     display: flex;
+     justify-content: space-around;
+     width: 900px;
+ }
+ .descriptions-services .delivery,
+ .descriptions-services .warranty,
+ .descriptions-services .credit{
+    width: 426px;
+ }
+ .services .switch-btn-path:nth-of-type(1) {
+     margin-top: 60px;
+ }
+ .services .switch-btn-path:nth-of-type(3) {
+     margin-bottom: 70px;
+ }
+ .switch-path {
+     display: none;
+ }
+.services .switch-btn-path {
+    display: block;
+    
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
 }
-
-
-.description-services,
-.logo-services {
+.text-switch {
+    margin: 0;
+    padding-top: 8px;
+}
+.description-services {
      opacity: 0;
      z-index: 0;
      transform: scale(1.5);
      transition: transform ease-in-out 0.3s, opacity ease-in-out .5s;
 }
- #path1:focus ~ .description-services > .path1,
- #path2:focus ~ .description-services > .path2,
- #path3:focus ~ .description-services > .path3 {
+ #path1:checked ~ .descriptions-services > .path1,
+ #path2:checked ~ .descriptions-services > .path2,
+ #path3:checked ~ .descriptions-services > .path3 {
     opacity: 1;
     z-index: 1;
     transform: scale(1);
 }
-.services-container .switch-path:focus,
-#path1:focus ~ .services-container .switch-btn:nth-of-type(1),
-#path2:focus ~ .services-container .switch-btn:nth-of-type(2),
-#path3:focus ~ .services-container .switch-btn:nth-of-type(3) {
+
+.services-container .switch-btn-path:checked,
+#path1:checked ~ .services .switch-btn-path:nth-of-type(1),
+#path2:checked ~ .services .switch-btn-path:nth-of-type(2),
+#path3:checked ~ .services .switch-btn-path:nth-of-type(3) {
     outline: none;
     background: black;
     color: #f7e184;
 }
+/* Конец стилизации сервисов*/
+
 
  .information-columns {
     display: flex;
     justify-content: space-between;
  }
- .descriptions-services {
-    position: relative;
 
-    width: 426px;
-    padding-left: 110px;
-    padding-top: 15px;
- }
- .logo-services {
-    position: relative;
-    min-width: 136px;
-    padding-left: 130px;
-    padding-top: 65px;
- }
- .descriptions-services .delivery,
- .warranty,
- .credit {
-     position: absolute;
- }
+
+ 
  .delivery-img {
+     margin-top: 65px;
      width: 136px;
      height: 164px;
  }
  .warranty-img {
+    margin-top: 65px;
     width: 171px;
     height: 194px;
  }
  .credit-img {
+    margin-top: 65px;
     width: 156px;
     height: 186px;
  }
@@ -424,24 +472,8 @@ body {
     opacity: 0.3;
     background-color: rgb(240, 197, 46, 0);
  }
- .services {
-    min-height: 288px;
+ 
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    margin: 0;
-    padding: 0px;
-    min-width: 278px;
-    border-right: solid black 7px;
- }
- .services .switch-path:nth-of-type(1) {
-     margin-top: 60px;
- }
- .services .switch-path:nth-of-type(3) {
-     margin-bottom: 70px;
- }
  .switch-path {
      height: 40px;
      border: none;
@@ -452,11 +484,11 @@ body {
 .catalog-navigation,
 .site-navigation,
 .button,
-.switch-path {
+.switch-btn-path {
     text-transform: uppercase;
     letter-spacing: 3.6px;
 }
-.switch-path {
+.switch-btn-path {
     letter-spacing: 2.15px;
 }
 .services-item:hover a,
@@ -506,6 +538,9 @@ body {
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.21px;
+}
+.services-title {
+    margin-top: 55px;
 }
 .page-title {
     letter-spacing: 0.17px;
@@ -743,9 +778,11 @@ body {
     background-position: 0 0;
 }
 .brands-item {
+    filter: grayscale(100%);
     opacity: 0.2;
 }
 .brands-item:hover {
+    filter: none;
     opacity: 1;
 }
 .main-navigation .delivery {
