@@ -269,11 +269,35 @@ body {
     background: black;
 }
 
+
+.description-services,
+.logo-services {
+     opacity: 0;
+     z-index: 0;
+     transform: scale(1.5);
+     transition: transform ease-in-out 0.3s, opacity ease-in-out .5s;
+}
+ #path1:focus ~ .description-services > .path1,
+ #path2:focus ~ .description-services > .path2,
+ #path3:focus ~ .description-services > .path3 {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+.services-container .switch-path:focus,
+#path1:focus ~ .services-container .switch-btn:nth-of-type(1),
+#path2:focus ~ .services-container .switch-btn:nth-of-type(2),
+#path3:focus ~ .services-container .switch-btn:nth-of-type(3) {
+    outline: none;
+    background: black;
+    color: #f7e184;
+}
+
  .information-columns {
     display: flex;
     justify-content: space-between;
  }
- .description-services {
+ .descriptions-services {
     position: relative;
 
     width: 426px;
@@ -286,7 +310,7 @@ body {
     padding-left: 130px;
     padding-top: 65px;
  }
- .description-services .delivery,
+ .descriptions-services .delivery,
  .warranty,
  .credit {
      position: absolute;
@@ -413,9 +437,13 @@ body {
     border-right: solid black 7px;
  }
  .services .switch-path:nth-of-type(1) {
-     margin-top: 70px;
+     margin-top: 60px;
+ }
+ .services .switch-path:nth-of-type(3) {
+     margin-bottom: 70px;
  }
  .switch-path {
+     height: 40px;
      border: none;
      background-color: rgba(0, 0, 0, 0);
      text-align: left;
