@@ -1047,6 +1047,9 @@ body {
     opacity: 1;
     outline: solid 3px #f0c52e;
 }
+.modal-error {
+    background: rgba(255, 128, 128, 0.6);
+}
 .feedback-user-letter-text {
     border: none;
     opacity: 0.5;

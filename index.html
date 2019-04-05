@@ -359,6 +359,15 @@
             
             var feedback = document.querySelector(".button-feedback");
             var feedback_popup = document.querySelector(".modal-feedback");
+
+            var form = feedback_popup.querySelector("form");
+            var user_name = feedback_popup.querySelector("[name=name]");
+            var feedback_user_name = feedback_popup.querySelector(".feedback-user-name");
+            var user_email = feedback_popup.querySelector("[name=e-mail]");
+            var feedback_user_email = feedback_popup.querySelector(".feedback-user-e-mail");
+            var user_letter_text = feedback_popup.querySelector("[name=text]");
+            var feedback_user_letter_text = feedback_popup.querySelector(".feedback-user-letter-text");
+
             var close_feedback = document.querySelector(".close-feedback");
 
             var overlay = document.querySelector(".modal-overlay");
@@ -389,6 +398,9 @@
                 evt.preventDefault;
                 feedback_popup.classList.remove("modal-show");
                 overlay.classList.remove("modal-show");
+                feedback_user_name.classList.remove("modal-error");
+                feedback_user_email.classList.remove("modal-error");
+                feedback_user_letter_text.classList.remove("modal-error");
             });
 
             close_click_overlay.addEventListener("click", function(evt) {
@@ -396,10 +408,31 @@
                 map_popup.classList.remove("modal-show");
                 feedback_popup.classList.remove("modal-show");
                 overlay.classList.remove("modal-show");
+                feedback_user_name.classList.remove("modal-error");
+                feedback_user_email.classList.remove("modal-error");
+                feedback_user_letter_text.classList.remove("modal-error");
             });
             search.addEventListener("focus", function (evt) {
                 evt.preventDefault();
                 search_button.classList.add("modal-show");
+            });
+            form.addEventListener("submit", function(evt) {
+                if(!user_name.value) {
+                    evt.preventDefault();
+                    feedback_user_name.classList.add("modal-error");
+                }
+            });
+            form.addEventListener("submit", function(evt) {
+                if(!user_email.value) {
+                    evt.preventDefault();
+                    feedback_user_email.classList.add("modal-error");
+                }
+            });
+            form.addEventListener("submit", function(evt) {
+                if(!user_email.value) {
+                    evt.preventDefault();
+                    feedback_user_letter_text.classList.add("modal-error");
+                }
             });
 
         </script>    
