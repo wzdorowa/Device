@@ -597,7 +597,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    color: rgba(70, 70, 70, 0.4);
+    color: #464646;
+    opacity: 0.4;
 }
 .button-comparison {
     font-family: "Open Sans";
@@ -1033,6 +1034,19 @@ body {
     width: 320px;
     padding: 20px;
 }
+.feedback-user-name:hover,
+.feedback-user-e-mail:hover,
+.feedback-user-letter-text:hover {
+    background-color: rgba(179, 250, 255, 0.6);
+}
+.feedback-user-name:focus,
+.feedback-user-e-mail:focus,
+.feedback-user-letter-text:focus {
+    background-color: #ffffff;
+    color: #464646;
+    opacity: 1;
+    outline: solid 3px #f0c52e;
+}
 .feedback-user-letter-text {
     border: none;
     opacity: 0.5;
@@ -1042,6 +1056,9 @@ body {
     padding: 20px;
 }
 .to-send {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
     margin-top: 50px; 
 }
 .modal-close {
@@ -1060,6 +1077,17 @@ body {
     border: 0;
 
     cursor: pointer;
+}
+.modal-close:hover {
+    background-color: #f0c52e;
+    opacity: 1;
+}
+.modal-close:active {
+    background-color: #f0c52e;
+    opacity: 0.3;
+}
+.modal-close:focus {
+    outline: none;
 }
 .modal-close::before,
 .modal-close::after {
@@ -1096,8 +1124,11 @@ body {
 .button.line:hover {
     background-color: #f0c52e;
 }
-.to-send .line {
-    margin: -14px;
+.button.line:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.button.line:focus {
+    outline: none;
 }
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
