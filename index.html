@@ -27,7 +27,7 @@
                               <label class="visually-hidden" for="user-search">Поиск по сайту</label>
                               <input class="search-icon-user" id="user-search" type="text" name="search" placeholder="Поиск по сайту">
                               </li>
-                              <li class="search-item-button visually-hidden"><a href="">Найти</a></li>
+                              <li class="search-item-button"><a href="">Найти</a></li>
                           </ul>
                       </form>
                       <ul class="user-navigation">
@@ -105,7 +105,6 @@
                       <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе 
                         силы не пропускать занятия и соблюдать диету</p>
                       <a class="button line" href="#">Подробнее</a>
-                      <!--Добавить кнопки переключения сайд бара-->
                       <table class="specifications">
                           <tr class="description-specifications">
                               <td>48 часов</td>
@@ -128,7 +127,6 @@
                       <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
                         мощным лазером, замаскированным под стандартную камеру.</p>
                       <a class="button line" href="#">Подробнее</a> 
-                      <!--Добавить кнопки переключения сайд бара-->
                       <table class="specifications">
                           <tr class="description-specifications">
                               <td>800 м</td>
@@ -366,6 +364,9 @@
             var overlay = document.querySelector(".modal-overlay");
             var close_click_overlay = document.querySelector(".modal-overlay");
 
+            var search = document.querySelector(".search-icon-user");
+            var search_button = document.querySelector(".search-item-button");
+
             map.addEventListener("click", function (evt) {
                 evt.preventDefault();
                 map_popup.classList.add("modal-show");
@@ -395,7 +396,11 @@
                 map_popup.classList.remove("modal-show");
                 feedback_popup.classList.remove("modal-show");
                 overlay.classList.remove("modal-show");
-            })
+            });
+            search.addEventListener("focus", function (evt) {
+                evt.preventDefault();
+                search_button.classList.add("modal-show");
+            });
 
         </script>    
         </body>

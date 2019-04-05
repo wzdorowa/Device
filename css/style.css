@@ -609,8 +609,7 @@ body {
 .search-item-user {
     position: relative;
 
-    padding: 0px 36px;
-    padding-right: 0;
+    padding: 0;
 }
 .search-item-user::before {
     content: "";
@@ -628,17 +627,30 @@ body {
 }
 .search-icon-user {
     height: 49px;
+    padding-left: 36px;
 }
 .search-icon-user:hover {
     opacity: 0.6;
 }
 .search-icon-user:focus {
+    height: 47px;
     opacity: 1;
     outline: none;
     border-bottom: solid 2px black;
 }
-.search-item-button:focus { /*доделать состояния кнопки*/
+.search-item-button { 
+    display: none;
     border: solid 2px black;
+}
+.search-item-button:hover,
+.search-item-button a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.search-item-button:active,
+.search-item-button a:active {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.3);
 }
 .login-link {
     position: relative;
