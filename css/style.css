@@ -797,8 +797,15 @@ body {
     filter: none;
     opacity: 1;
 }
-.main-navigation .delivery {
+.site-navigation .delivery-nav  {
     margin-right: 35px;
+    cursor: pointer;
+}
+.delivery-nav a:hover {
+    opacity: 0.6;
+}
+.delivery-nav:active {
+    opacity: 0.3;
 }
 .catalog-navigation {
     position: relative;
@@ -867,22 +874,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.delivery:hover {
+.guarantee-nav:hover {
     opacity: 0.6;
 }
-.delivery:active {
+.guarantee-nav:active {
     opacity: 0.3;
 }
-.guarantee:hover {
+.contact-nav:hover {
     opacity: 0.6;
 }
-.guarantee:active {
-    opacity: 0.3;
-}
-.contact:hover {
-    opacity: 0.6;
-}
-.contact:active {
+.contact-nav:active {
     opacity: 0.3;
 }
 .main-header-logo:hover {
