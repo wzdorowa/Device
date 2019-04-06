@@ -46,7 +46,8 @@ body {
  .breadcrumbs,
  .filter-option,
  .catalog-list,
- .pagination-item {
+ .pagination-item,
+ .roll-expand {
      list-style: none;
  }
  .search-list a,
@@ -214,7 +215,34 @@ body {
  .category-item {
      width: 160px;
  }
-
+.modal-category {
+    display: none;
+    position: absolute;
+    min-height: 153px;
+    background-color: #f7e296;
+    list-style: none;
+    padding-top: 10px;
+    width: 100%;
+    z-index: 2;
+}
+.modal-category-list {
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    padding: 0;
+}
+.modal-category-item {
+    width: 180px;
+    padding-left: 60px;
+}
+.modal-category-item:hover {
+    opacity: 0.6;
+}
+.modal-category-item:active {
+    opacity: 0.3;
+}
  /* Стилизация слайдера*/
  .slider {
     position: relative;
@@ -229,8 +257,7 @@ body {
 
      opacity: 0;
      z-index: -1;
-     transform: scale(1.5);
-     transition: transform ease-in-out 0.3s, opacity ease-in-out .5s;
+     transition: ease-in-out 0.4s, opacity ease-in-out .5s;
 
  }
  #slide1:checked ~ .slider > .slide1,
@@ -238,7 +265,6 @@ body {
  #slide3:checked ~ .slider > .slide3 {
     opacity: 1;
     z-index: 1;
-    transform: scale(1);
 }
 .slider-container .switch-btn:hover,
 #slide1:checked ~ .controls .switch-btn:nth-of-type(1),
@@ -259,7 +285,7 @@ body {
      width: 8px;
      border-radius: 50%;
      margin: 25px 12px 0 16px;
-     transition: background ease-in-out .5s;
+     transition: ease-in-out .5s;
      z-index: 2;
  }
  .slider-container .switch-btn::after {
@@ -339,15 +365,12 @@ body {
 .description-services {
      opacity: 0;
      z-index: -1;
-     transform: scale(1.5);
-     transition: transform ease-in-out 0.3s, opacity ease-in-out .5s;
 }
  #path1:checked ~ .descriptions-services > .path1,
  #path2:checked ~ .descriptions-services > .path2,
  #path3:checked ~ .descriptions-services > .path3 {
     opacity: 1;
     z-index: 1;
-    transform: scale(1);
 }
 
 .services-container .switch-btn-path:checked,
@@ -817,23 +840,30 @@ body {
 }
 .catalog-navigation {
     position: relative;
-
+    display: flex;
     padding: 0 30px;
     padding-left: 0;
 }
-.catalog-navigation::before {
+.roll-expand {
+    position: relative;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.roll-expand::before,
+.roll-expand::after {
     content: "";
 
     position: absolute;
-    bottom: 4px;
+    bottom: 11px;
     right: 0px;
 
     width: 16px;
-    height: 16px;
+    height: 2px;
 
-    background-image: url("../img/icon/plus.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-color: rgba(117, 116, 116, 0.6);;
+}
+.roll-expand::before {
+    transform: rotate(90deg);
 }
 .catalog-nav:hover {
     opacity: 0.6;
