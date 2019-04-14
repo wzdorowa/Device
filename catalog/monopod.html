@@ -70,24 +70,32 @@
               </nav>
         </header>
 
-        <main class="container">
-            <h1 class="page-title">Моноподы для селфи</h1>
+        <main class="main-content">
 
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs-item arrow">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs-item arrow">
-                    <a href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="breadcrumbs-item">
-                    <a href="monopod.html">Моноподы для селфи</a>
-                </li>
-            </ul>
-            
-            <section class="filter">
+            <section class="page-header container">
+                <h1 class="page-title">Моноподы для селфи</h1>
+
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item arrow">
+                        <a href="index.html">Главная</a>
+                 </li>
+                 <li class="breadcrumbs-item arrow">
+                        <a href="catalog.html">Каталог товаров</a>
+                  </li>
+                 <li class="breadcrumbs-item">
+                       <a href="monopod.html">Моноподы для селфи</a>
+                 </li>
+                </ul>
+           </section>
+
+            <div class="container-fill">
+                <div class="left-path"></div>
+                <div class="right-path"></div>
+            </div>
+            <div class="page-catalog container">            
+                <section class="filter">
                 <h2 class="filter-title">Фильтр:</h2>
-                <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+                <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
                     <hr>
                     <fieldset class="filter-parameter">
                         <legend>Стоимость</legend>
@@ -140,30 +148,30 @@
                     </fieldset>
                     <button type="submit" class="button to-show">Показать</button> 
                 </form>
-            </section> 
-            <section class="sorts">
-                <h2 class="visually-hidden">Сортировка:</h2>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset class="filter-parameter">
-                        <legend class="filter-title">Сортировка:</legend>
-                        <ul>
-                            <li class="filter-option">
+                </section> 
+                <section class="sorts">
+                    <h2 class="visually-hidden">Сортировка:</h2>
+                    <div class="sorts-parameter">
+                        <h2 class="sorts-title">Сортировка:</h2>
+                        <ul class="sort-option">
+                            <li class="sorts-option-item">
                                 <a class="sort">По цене</a>
                             </li>
-                            <li class="filter-option">
+                            <li class="sorts-option-item">
                                 <a class="sort">По типу</a>
                             </li>
-                            <li class="filter-option">
+                            <li class="sorts-option-item">
                                 <a class="sort">По популярности</a>
                             </li>
                         </ul>
-                    </fieldset>
-                    <a class="button"></a> <!--Сортировка по возрастанию-->
-                    <a class="button"></a> <!--Сортировка по убыванию-->
-                </form>
-            </section>
+                    <div>
+                    <div class="sorts-button">    
+                        <a class="button">0</a> <!--Сортировка по возрастанию-->
+                        <a class="button">0</a> <!--Сортировка по убыванию-->
+                    </div>
+                </section>
 
-            <section class="catalog">
+                <section class="catalog">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
@@ -228,7 +236,8 @@
                         <a href="#">Вперед</a>
                     </li>
                 </ul>
-            </section>
+                </section>
+            </div>
         </main>
         <footer class="main-footer">
             <div class="main-footer-wrapper">
