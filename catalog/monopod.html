@@ -88,88 +88,89 @@
                 </ul>
            </section>
 
-            <div class="container-fill">
-                <div class="left-path"></div>
-                <div class="right-path"></div>
-            </div>
-            <div class="page-catalog container">            
+            <section class="filter-page-line">
+                <div class="container">
+                    <div class="filter-page-line__inner">
+                        <h2 class="filter-title">Фильтр:</h2>
+                        <section class="sorts-parameter">
+                                <h2 class="sorts-title">Сортировка:</h2>
+                                <ul class="sort-option">
+                                    <li class="sorting-item sorting-item-active">
+                                        <a >По цене</a>
+                                    </li>
+                                    <li class="sorting-item">
+                                        <a >По типу</a>
+                                    </li>
+                                    <li class="sorting-item">
+                                        <a >По популярности</a>
+                                    </li>
+                                </ul>
+                            <ul class="sorting-traingles">
+                                <li class="sorting-item sorting-item-traingles">
+                                    <a class="sorting-asc">
+                                        <span class="visually-hidden">По возрастанию</span>
+                                    </a>
+                                </li>
+                                <li class="sorting-item sorting-item-traingles sorting-item-active">
+                                    <a class="sorting-desc">
+                                        <span class="visually-hidden">По убыванию</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>     
+                
+            <div class="bg-gradient-whitegray">
+                <div class="container flexit">
                 <section class="filter">
-                <h2 class="filter-title">Фильтр:</h2>
-                <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
-                    <hr>
+                    <h2 class="visually-hidden">Фильтр:</h2>
+                    <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-parameter">
-                        <legend>Стоимость</legend>
-                        <ul>
-                            <li class="filter-option"> <!--Доработать бегунок; нужно два ползунка, пока только один-->
-                                <input class="filter-input filter-input-range" type="range" min="0" max="9000" step="1" value="5000" name="product-cost" id="filter-product-cost">
-                                <label for="filter-product-cost">Стоимость</label>
-                            </li>
-                        </ul>
+                        <legend class="filter-legend">Стоимость</legend>
+                        <div class="filter-range">
+                            <button class="filter-product-cost filter-product-cost--from" type="button">
+                                <span>От 0</span>
+                            </button>    
+                            <button class="filter-product-cost filter-product-cost--to" type="button">
+                                <span>До 5000</span>
+                            </button>
+                        </div>
                     </fieldset>
-                    <hr>
+
                     <fieldset class="filter-parameter">
-                        <legend>Цвет</legend>
-                        <ul>
-                            <li class="filter-option">
+                        <legend class="filter__legend">Цвет</legend>
+
                                 <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
                                 <label for="filter-black">Черный</label>
-                            </li>
-                            <li class="filter-option">
+                           
                                 <input class="filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
                                 <label for="filter-white">Белый</label>
-                            </li>
-                            <li class="filter-option">
+                          
                                 <input class="filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
                                 <label for="filter-blue">Синий</label>
-                            </li>
-                            <li class="filter-option">
+                            
                                 <input class="filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
                                 <label for="filter-red">Красный</label>
-                            </li>
-                            <li class="filter-option">
+                           
                                 <input class="filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
                                 <label for="filter-pink">Розовый</label>
-                            </li>
-                        </ul>
                     </fieldset>
-                    <hr>
+
                     <fieldset class="filter-parameter">
-                        <legend>Bluetooth</legend>
-                        <ul>
-                            <li class="filter-option">
+                        <legend class="filter__legend">Bluetooth</legend>
+                        
                                 <input class="filter-input filter-input-radio" type="radio" name="yes" id="filter-yes" checked>
                                 <label for="filter-yes">Есть</label>
-                            </li>
-                            <li class="filter-option">
+                          
                                 <input class="filter-input filter-input-radio" type="radio" name="no" id="filter-no">
                                 <label for="filter-no">Нет</label>
-                            </li>
-                        </ul>
                     </fieldset>
                     <button type="submit" class="button to-show">Показать</button> 
                 </form>
                 </section> 
-                <section class="sorts">
-                    <h2 class="visually-hidden">Сортировка:</h2>
-                    <div class="sorts-parameter">
-                        <h2 class="sorts-title">Сортировка:</h2>
-                        <ul class="sort-option">
-                            <li class="sorts-option-item">
-                                <a class="sort">По цене</a>
-                            </li>
-                            <li class="sorts-option-item">
-                                <a class="sort">По типу</a>
-                            </li>
-                            <li class="sorts-option-item">
-                                <a class="sort">По популярности</a>
-                            </li>
-                        </ul>
-                    <div>
-                    <div class="sorts-button">    
-                        <a class="button">0</a> <!--Сортировка по возрастанию-->
-                        <a class="button">0</a> <!--Сортировка по убыванию-->
-                    </div>
-                </section>
+                
 
                 <section class="catalog">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -237,8 +238,11 @@
                     </li>
                 </ul>
                 </section>
+                </div>
+                </div>
             </div>
         </main>
+
         <footer class="main-footer">
             <div class="main-footer-wrapper">
             <div class="container">   
