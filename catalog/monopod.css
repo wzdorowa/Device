@@ -739,215 +739,80 @@ img {
 
 /*Конец стилизации блока под хедером*/
 
-.filter {
-   width: 265px;
-   padding-left: 60px;
-   margin-top: -70px;
-}
-.sorts {
-   display: flex;
-   justify-content: space-between;
-   width: 835px;
-   height: 70px;
-   margin-top: -70px;
-}
-.page-catalog {
-   display: flex;
-   flex-wrap: wrap;
-}
-.sorts-parameter {
-   display: flex;
-}
-.sorts-title {
-   font-family: "gilroyextrabold";
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 24px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   color: #000000;
 
-   margin: 0;
-   padding-top: 20px;
-   padding-left: 70px;
-}
-.container-fill {
-   display: flex;
-   background-color: #e5e5e5;
-   min-height: 70px;
-   width: 100%;
-}
-.left-path {
-   min-width: 325px;
-   padding-left: 10%;
-   background-color: #dcdcdc;
-}
-.right-path {
-   min-width: 835px;
-   padding-right: 10%;
-   background-color: #ebebeb;
-}
-.sort-option {
-   list-style: none;
-   display: flex;
-   justify-content: space-between;
-   width: 290px;
-
-   margin: 0;
-   padding-top: 20px;
-   padding-left: 55px;
-}
-.sorts-button {
-   height: 50px;
-   padding-top: 20px;
-   padding-left: 230px;
-}
-
- .filter-option,
- .catalog-list,
- .pagination-item {
-     list-style: none;
- }
- .catalog-list a,
- .pagination-item a,
- .modal-product a {
-     color: #000000;
- }
- .catalog-item-title {
-    font-size: 18px;
- }
- .catalog-item-price {
-    font-family: "gilroylight";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.16px;
- }
-
- .filter-title {
-   font-family: "gilroyextrabold";
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 24px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   color: #000000;
-   height: 50px;
-   margin: 0;
-   padding-top: 20px;
- }
- .filters {
-    padding-top: 70px;
- }
- .pagination-item a {
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.91px;
- }
- .sort {
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
- }
- .button.sing-in,
- .button.to-show,
- .filter-parameter {
-     border: none;
- }
 /*Стилизация линии сортировки*/
 
 .filter-page-line {
    background-image: linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
 }
 .filter-page-line__inner {
-  display: flex;
-  margin-left: 60px;
+   max-height: 70px;
+   display: flex;
+   margin-left: 60px;
 }
 .filter-title {
-   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: normal;
+   font-family: 'gilroyextrabold', 'Helvetica', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
 
-  margin: 0;
+   letter-spacing: .2em;
+   text-transform: uppercase;
+   color: #000000;
 
-  letter-spacing: .2em;
-  text-transform: uppercase;
-
-  color: inherit;
-  width: 270px;
-  padding: 26px 0;
-  padding-left: 2px;
+   width: 270px;
+   margin: 0;
+   padding: 23px 0;
 }
 .sorts-parameter {
-   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+   display: flex;
+   justify-content: space-between;
+   
 
-  width: 760px;
-  padding: 20px 0;
-  padding-top: 18px;
-  padding-left: 72px;
+   width: 760px;
+   padding: 23px 0;
+   padding-left: 72px;
 
-  background-color: #ebebeb;
-
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: center;
+   background-color: #ebebeb;
 }
 .sorts-title {
-   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: normal;
+   font-family: 'gilroyextrabold', 'Helvetica', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
 
-  margin: 0;
+   letter-spacing: .2em;
+   text-transform: uppercase;
+   color: #000000;
 
-  letter-spacing: .2em;
-  text-transform: uppercase;
-
-  color: inherit;
+   margin: 0;
 }
 .sort-option {
-   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
 
-  width: 480px;
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+   width: 480px;
+   margin: 0;
+   margin-left: auto;
+   padding: 0;
 }
 .sorting-item {
+   list-style-type: none;
    margin-right: 30px;
-
-  list-style-type: none;
 }
 .sorting-item a {
+   font-family: "Open Sans";
    font-size: 14px;
-   font-weight: normal;
+   font-weight: 400;
    line-height: 18px;
  
-   -webkit-transition: opacity 200ms;
-   -o-transition: opacity 200ms;
    transition: opacity 200ms;
-   text-decoration: none;
-   letter-spacing: normal;
  
-   opacity: .3;
-   color: inherit;
+   opacity: 0.3;
+   color: #000000;
+
+   cursor: pointer;
 }
 .sorting-item a:focus,
 .sorting-item a:hover {
@@ -958,30 +823,38 @@ img {
    opacity: 1;
 }
 .sorting-traingles {
-   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 
+  list-style-type: none;
   width: 60px;
   margin-top: 10px;
 }
 .sorting-item-traingles {
    position: relative;
 }
-.sorting__asc,
-.sorting__desc {
-  position: absolute;
+.sorting-asc::before {
+   content: "";
 
-  border-style: solid;
-}
-.sorting__asc {
-  border-width: 0 5.5px 10px 5.5px;
-  border-color: transparent transparent #231f20 transparent;
-}
+   position: absolute;
 
-.sorting__desc {
-  border-width: 10px 5.5px 0 5.5px;
-  border-color: #231f20 transparent transparent transparent;
+   width: 11; 
+   height: 10;
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-bottom: 11px solid #000000;
+
+   opacity: 0.2;
+}
+.sorting-desc::before {
+   content: "";
+
+   position: absolute;
+   left: 30px;
+   width: 11; 
+   height: 10;
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-top: 11px solid rgba(0, 0, 0, 0.2);
 }
 /*Конец стилизации линии сортировки*/
 
