@@ -1034,3 +1034,38 @@ img {
 
 /*Конец стилизации фильтра Bloetooth*/
 
+/*Кнопка "Показать"*/
+
+.button {
+   text-transform: uppercase;
+   letter-spacing: 3.6px;
+}
+.button.to-show {
+   border: none;
+   letter-spacing: 2.15px;
+   background-color: rgba(0, 0, 0, 0);
+}
+.to-show {
+   width: 200px;
+   height: 40px;
+   cursor: pointer;
+   margin-top: 15px; 
+}
+.button.line:hover {
+   background-color: #f0c52e;
+}
+.button.line:active {
+   color: rgba(0, 0, 0, 0.3);
+}
+.button.line:focus {
+   outline: none;
+}
+.line {
+   background: linear-gradient(rgba(0, 0, 0, 0) 45%, #f0c52e 0, #f0c52e 70%, rgba(0, 0, 0, 0) 0);
+   background-size: 100% 35px;
+
+   align-content: center;
+}
+
+/* Конец кнопки "Показать"*/
+
