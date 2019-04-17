@@ -1161,6 +1161,67 @@ img {
 
 /*Конец кнопки "Добавить к сравнению"*/
 
+/*Пагинация*/
+
+.pagination {
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 40px;
+   margin-left: 40px;
+   width: 760px;
+   height: 70px;
+
+   background-color: #ebebeb;
+
+}
+.pagination a {
+   font-family: 'gilroyextrabold', 'Helvetica', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0.91px;
+   color: #000000;
+}
+.pagination-list {
+   display: flex;
+   justify-content: space-between;
+
+   list-style: none;
+   width: 85px;
+   margin: 0;
+   margin-top: 23px;
+}
+.pagination-button {
+   display: block;
+   padding-top: 23px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.pagination-item {
+   opacity: 0.3;
+   cursor: pointer;
+}
+.pagination-item-active {
+   opacity: 1;
+}
+.pagination-item:hover {
+   opacity: 0.6;
+}
+.pagination-item:active {
+   opacity: 1;
+}
+.pagination-button:hover {
+   background-color: #dcdcdc;
+}
+.pagination-button:active a{
+   color: #000000;
+   opacity: 0.3;
+}
+
+/*Конец пагинации*/
+
 .modal-show {
    display: block;
 }
