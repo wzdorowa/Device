@@ -275,7 +275,7 @@
                     <h2 class="contacts-title">Контакты</h2>
                     <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img class="contacts-map" src="img/map.jpg">
-                     <a class="button line" href="">Напишите нам</a>
+                     <a class="button line button-feedback" href="">Напишите нам</a>
                 </section>
             </div>
 
@@ -373,9 +373,6 @@
             var overlay = document.querySelector(".modal-overlay");
             var close_click_overlay = document.querySelector(".modal-overlay");
 
-            var search = document.querySelector(".search-icon-user");
-            var search_button = document.querySelector(".search-item-button");
-
             var roll_expand = document.querySelector(".roll-expand");
             var catalog_popup = document.querySelector(".modal-category");
             var close_catalog = document.querySelector(".roll-expand");
@@ -421,10 +418,6 @@
                 feedback_user_name.classList.remove("modal-error");
                 feedback_user_email.classList.remove("modal-error");
                 feedback_user_letter_text.classList.remove("modal-error");
-            });
-            search.addEventListener("focus", function (evt) {
-                evt.preventDefault();
-                search_button.classList.add("modal-show");
             });
             form.addEventListener("submit", function(evt) {
                 if(!user_name.value) {

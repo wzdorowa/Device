@@ -1245,9 +1245,7 @@ img {
 .modal-close::after {
     transform: rotate(-45deg);
 }
-.modal-show {
-    display: block;
-}
+
 .modal-error {
     background: rgba(255, 128, 128, 0.6);
 }
@@ -1349,6 +1347,10 @@ img {
     background-size: 100% 35px;
 
     align-content: center;
+}
+
+.modal-show {
+    display: block;
 }
 
 /*Конец модального окна "Обратная связь"*/
