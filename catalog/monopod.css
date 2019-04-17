@@ -211,6 +211,9 @@ img {
 .login-link {
   position: relative;
 
+  display: flex;
+  justify-content: space-around;
+
   padding-left: 28px;
   padding-right: 44px;
 }
@@ -233,6 +236,10 @@ img {
 }
 .login-link:active {
   opacity: 0.3;
+}
+.login-out {
+   padding-left: 20px;
+   opacity: 0.3;
 }
 .comparison {
   position: relative;
