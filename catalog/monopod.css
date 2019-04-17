@@ -1131,3 +1131,25 @@ img {
 
 /*Конец кнопки "В корзину"*/
 
+/*Кнопка "Добавить к сравнению"*/
+
+.button-comparison {
+   display: inline-block;
+   width: 200px;
+   text-align: center;
+   font-family: "Open Sans";
+   font-size: 13px;
+   font-weight: 300;
+   line-height: 36px;
+   color: #000000;
+   opacity: 0.5;
+   cursor: pointer;
+}
+.button-comparison:hover {
+   opacity: 1;
+}
+.button-comparison:active {
+   opacity: 0.2;
+}
+
+/*Конец кнопки "Добавить к сравнению"*/
