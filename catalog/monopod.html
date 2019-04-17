@@ -121,22 +121,6 @@
                     </div>
                 </div>
             </section>     
-                
-            <!--<div class="container flexit">
-                <section class="filter">
-                    <h2 class="visually-hidden">Фильтр:</h2>
-                        <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
-                            <fieldset class="filter-parameter">
-                                <legend class="filter-legend">Стоимость</legend>
-                                <div class="filter-range">
-                                    <button class="filter-product-cost filter-product-cost--from" type="button">
-                                        <span>От 0</span>
-                                    </button>    
-                                    <button class="filter-product-cost filter-product-cost--to" type="button">
-                                        <span>До 5000</span>
-                                    </button>
-                                </div>
-                            </fieldset>-->
 
                     <div class="container flexit">
                         <section>
@@ -215,8 +199,10 @@
                                     </span>
                                     <span class="catalog-item-price">500 руб.</span>
                                 </a>
-                                <a class="button-cart line">В корзину</a>
-                                <a class="button-comparison">Добавить к сравнению</a>
+                                <div class="buttons-product">
+                                    <a class="button-cart line">В корзину</a>
+                                    <a class="button-comparison">Добавить к сравнению</a>
+                                </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="product-link-img" href="catalog-item.html">
@@ -334,9 +320,18 @@
         var catalog_popup = document.querySelector(".modal-category");
         var close_catalog = document.querySelector(".roll-expand");
 
+        var product_link = document.querySelector(".product-link-img");
+        var buttons_product = document.querySelector(".buttons-product");
+
+
         roll_expand.addEventListener("click", function (evt) {
             evt.preventDefault();
             catalog_popup.classList.toggle("modal-show");
+        });
+
+        product_link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            buttons_product.classList.add("modal-show");
         });
 
     </script>

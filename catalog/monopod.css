@@ -670,10 +670,6 @@ img {
 /*Конец социальных кнопок*/
 /*Конец стилизации футера*/
 
-.modal-show {
-   display: block;
-}
-
 /*Стилизация блока под хедером*/
 .page-title {
    font-family: "gilroyextrabold";
@@ -1079,6 +1075,7 @@ img {
    margin: 0;
 }
 .catalog-item {
+   position: relative;
    width: 360px;
    margin-top: 60px;
 }
@@ -1097,6 +1094,16 @@ img {
 }
 .catalog-item-title {
    max-width: 255px;
+}
+.buttons-product {
+   display: none;
+   position: absolute;
+   top: 185px;
+   left: 80px;
+   z-index: 1;
+}
+.catalog-item:hover .product-link-img {
+   opacity: 0.4;
 }
 /*Кнопка "В корзину"*/
 
@@ -1153,3 +1160,7 @@ img {
 }
 
 /*Конец кнопки "Добавить к сравнению"*/
+
+.modal-show {
+   display: block;
+}
