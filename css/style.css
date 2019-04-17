@@ -185,6 +185,9 @@ img {
     background-color: #000000;
     color: rgba(255, 255, 255, 0.3);
 }
+.search-list:hover .search-item-button {
+    display: block;
+ }
 
  /* Конец формы поиска */
  /* Навигация пользователя */
