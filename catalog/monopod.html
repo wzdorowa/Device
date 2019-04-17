@@ -214,7 +214,10 @@
                                     </span>
                                     <span class="catalog-item-price">1500 руб.</span>
                                 </a>
-                                
+                                <div class="buttons-product">
+                                    <a class="button-cart line">В корзину</a>
+                                    <a class="button-comparison">Добавить к сравнению</a>
+                                </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="product-link-img" href="catalog-item.html">
@@ -226,7 +229,10 @@
                                     </span>
                                     <span class="catalog-item-price">2500 руб.</span>
                                 </a>
-                                
+                                <div class="buttons-product">
+                                    <a class="button-cart line">В корзину</a>
+                                    <a class="button-comparison">Добавить к сравнению</a>
+                                </div>
                             </li>
                             <li class="catalog-item">
                                 <a class="product-link-img" href="catalog-item.html">
@@ -238,7 +244,10 @@
                                     </span>
                                     <span class="catalog-item-price">4900 руб.</span>
                                 </a>
-                                
+                                <div class="buttons-product">
+                                    <a class="button-cart line">В корзину</a>
+                                    <a class="button-comparison">Добавить к сравнению</a>
+                                </div>
                             </li>
                         </ul>
                         <section class="pagination">
@@ -322,18 +331,10 @@
         var catalog_popup = document.querySelector(".modal-category");
         var close_catalog = document.querySelector(".roll-expand");
 
-        var product_link = document.querySelector(".product-link-img");
-        var buttons_product = document.querySelector(".buttons-product");
-
 
         roll_expand.addEventListener("click", function (evt) {
             evt.preventDefault();
             catalog_popup.classList.toggle("modal-show");
-        });
-
-        product_link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            buttons_product.classList.add("modal-show");
         });
 
     </script>

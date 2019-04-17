@@ -1105,6 +1105,9 @@ img {
 .catalog-item:hover .product-link-img {
    opacity: 0.4;
 }
+.catalog-item:hover .buttons-product {
+   display: block;
+}
 /*Кнопка "В корзину"*/
 
 .button-cart {
