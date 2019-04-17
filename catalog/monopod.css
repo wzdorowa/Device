@@ -867,6 +867,7 @@ img {
  .filter {
     margin-top: 85px;
     margin-left: 60px;
+    margin-right: 70px;
  }
  .filter-parameter {
    display: flex;
@@ -1069,3 +1070,47 @@ img {
 
 /* Конец кнопки "Показать"*/
 
+.catalog-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   list-style: none;
+   margin: 0;
+}
+.catalog-item {
+   width: 360px;
+   margin-top: 60px;
+}
+.product-link {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   font-family: 'gilroyextrabold', 'Helvetica', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: #000000;
+   margin-top: 35px;
+}
+.catalog-item-title {
+   max-width: 255px;
+}
+/*Кнопка "В корзину"*/
+
+.button-product {
+   text-transform: uppercase;
+   letter-spacing: 3.6px;
+
+   border: none;
+   letter-spacing: 2.15px;
+   background-color: rgba(0, 0, 0, 0);
+
+   width: 200px;
+   height: 40px;
+   cursor: pointer;
+}
+
+/*Конец кнопки "В корзину"*/
